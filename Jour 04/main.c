@@ -104,7 +104,7 @@ void ft_putnbr_base(int nbr, char *base)
     //Error
     if (*base == 0 || *base == '+' || *base == '-' || lentBase == 1)
         //|| *base < 32 || *base > 126
-    return;
+    return 0;
     
     //Error caractère identique
     while (base[i])
@@ -188,7 +188,7 @@ int ft_atoi_base(char *str, char *base)
     while (*str)
     {
         //if (convert >= '0' && convert <= '9')
-            result = result * lentbase + convertCharToInt(*str, base);;
+            result = result * lentbase + convertCharToInt(*str, base);
         
         result = result * negative;
         str++;
