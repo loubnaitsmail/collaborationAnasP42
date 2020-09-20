@@ -1,0 +1,2 @@
+echo $#FILE_NAME
+echo ${#FILE_NAME}
