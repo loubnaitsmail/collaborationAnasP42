@@ -25,9 +25,3 @@ char *ft_strsub(char const *s, unsigned int start, size_t len)
     copy[i] = '\0';
     return (copy);
 }
-
-int main(int argc, const char * argv[]) {
-    char *s = NULL;
-    printf("%s\n", ft_strsub(s, 2, 1));
-    return 0;
-}

@@ -22,14 +22,3 @@ void *ft_memccpy(void *restrict dest, const void *restrict src, int c , size_t s
     }
     return (NULL);
 }
-
-int main(int argc, const char * argv[]) {
-    char *src = "hello";
-    char *dest = NULL;
-    int i;
-    dest = (char *)malloc(sizeof(src));
-    ft_memccpy(dest, src, 'l', sizeof(src));
-    printf( "%s", dest);
-    printf( "\n" );
-        return 0;
-}

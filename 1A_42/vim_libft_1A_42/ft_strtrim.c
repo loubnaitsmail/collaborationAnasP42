@@ -25,9 +25,3 @@ char *ft_strtrim(char const *s)
         last--;
     return (ft_strsub(s, start, last - start + 1));
 }
-
-int main(int argc, const char * argv[]) {
-    char *s = " hello \n\n ";
-    printf("%s\n", ft_strtrim(s));
-    return 0;
-}

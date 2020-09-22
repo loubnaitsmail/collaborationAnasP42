@@ -48,10 +48,3 @@ char *ft_itoa(int n)
         result[0] = base[nbr];
     return (result);
 }
-
-int main(int argc, const char * argv[]) {
-
-    int n = 42555;
-    printf("result : %s\n", ft_itoa(n));
-    return 0;
-}

@@ -13,19 +13,3 @@ void *ft_memset (void *p, int value, size_t size)
     
     return (p);
 }
-
-int main(int argc, const char * argv[]) {
-    
-    int tab[] = {4, 5, 6};
-    size_t size = sizeof(int) * 3;
-    int i;
-  
-    for(i = 0; i < 3; i++)
-        printf("%d ", tab[i]);
-    //memset(tab, 1, size);
-    printf( "\n" );
-    ft_memset(tab, 6, size);
-    for(i = 0; i < 3; i++)
-        printf("%d ", tab[i]);
-    return 0;
-}

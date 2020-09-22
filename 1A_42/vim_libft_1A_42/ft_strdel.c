@@ -16,8 +16,3 @@ void ft_strdel(char **as)
         *as = NULL;
     }
 }
-
-int main(int argc, const char * argv[]) {
-   
-    return 0;
-}

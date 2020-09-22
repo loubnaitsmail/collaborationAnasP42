@@ -15,12 +15,3 @@ int ft_isprint(int c)
     else
         return (0);
 }
-
-int main(int argc, const char * argv[]) {
-
-    int c = '\n';
-    printf("%d\n", isprint(c));
-    printf("%d\n", ft_isprint(c));
-
-    return 0;
-}

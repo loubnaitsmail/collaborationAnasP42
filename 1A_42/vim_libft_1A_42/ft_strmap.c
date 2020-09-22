@@ -26,8 +26,3 @@ char *ft_strmap(char const *s, char (*f)(char))
     copy[i] = '\0';
     return (copy);
 }
-
-int main(int argc, const char * argv[]) {
-
-    return 0;
-}

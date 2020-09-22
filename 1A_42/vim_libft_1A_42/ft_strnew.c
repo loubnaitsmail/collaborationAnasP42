@@ -24,9 +24,3 @@ char *ft_strnew(size_t size)
     }
     return (str);
 }
-
-int main(int argc, const char * argv[]) {
-    
-    printf("%s\n", ft_strnew(4));
-    return 0;
-}

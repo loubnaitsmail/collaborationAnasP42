@@ -15,12 +15,3 @@ int ft_isalpha(int c)
     else
         return (0);
 }
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    int c = 'p';
-    printf("%d\n", isalpha(c));
-    printf("%d\n", ft_isalpha(c));
-
-    return 0;
-}

@@ -24,14 +24,3 @@ void *ft_memove(void *dest, const void *src, size_t size)
     }
     return (dest);
 }
-
-int main(int argc, const char * argv[]) {
-    char src[] = "hello";
-    char dest[50];
-    int i;
-    ft_memove(dest, src, sizeof(src));
-    for (i = 0; i < 5; i++)
-        printf("%c", dest[i]);
-    printf("\n");
-    return 0;
-}

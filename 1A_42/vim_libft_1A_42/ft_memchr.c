@@ -21,12 +21,3 @@ void *ft_memchr(const void *src, int c, size_t size)
     }
     return (NULL);
 }
-
-int main(int argc, const char * argv[]) {
-    
-    char *src = "hello";
-    char *dest = ft_memch(src, 'l', sizeof(src));
-    printf("%s", dest);
-    
-    return 0;
-}

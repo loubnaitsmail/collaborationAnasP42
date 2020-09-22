@@ -30,12 +30,3 @@ size_t ft_strlcat(char *restrict dest, const char *restrict src, size_t destsize
     else
         return(strlen(dest) + ft_strlen(src)); //ce cas ne fonctionne pas ?
 }
-
-int main()
-{
-    char dest[10] = "Hello";
-    char *src = " world";
-    printf("%zu\n", ft_strlcat(dest, src, 9));
-    printf("%zu\n", strlcat(dest, src, 9));
-
-}

@@ -21,14 +21,3 @@ char    *ft_strchr(const char *s, int c)
     }
     return (NULL);
 }
-
-int main(int argc, const char * argv[]) {
-
-    char *s = "hello";
-    int c = 'l';
-    
-    printf("%s\n", ft_strchr(s, c));
-    printf("%s\n", strchr(s, c));
-
-    return 0;
-}

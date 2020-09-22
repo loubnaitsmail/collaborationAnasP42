@@ -14,10 +14,3 @@ int ft_strequ(char const *s1, char const *s2)
         return (1);
     return (0);
 }
-
-int main(int argc, const char * argv[]) {
-    char *s1 = "hello";
-    char *s2 = "hello";
-    printf("%d\n", ft_strequ(s1, s2));
-    return 0;
-}

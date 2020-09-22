@@ -16,8 +16,3 @@ void ft_memdel(void **ap)
         *ap = NULL;
     }
 }
-
-int main(int argc, const char * argv[]) {
-
-    return 0;
-}

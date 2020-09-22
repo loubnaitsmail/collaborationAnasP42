@@ -34,10 +34,3 @@ char *ft_strjoin(char const *s1, char const *s2)
     concat[i] = '\0';
     return (concat);
 }
-
-int main(int argc, const char * argv[]) {
-    char *s1 ="hello";
-    char *s2 = "wold";
-    printf("%s\n", ft_strjoin(s1, s2));
-    return 0;
-}

@@ -30,12 +30,3 @@ char    *ft_strstr(const char *str, const char *to_find)
     }
     return (NULL);
 }
-
-int main(int argc, const char * argv[]) {
-    char *str = "hello";
-    char *find = "lo";
-    printf("%s\n", ft_strstr(str, find));
-    printf("%s\n", strstr(str, find));
-
-    return 0;
-}

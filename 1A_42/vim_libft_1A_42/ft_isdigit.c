@@ -15,11 +15,3 @@ int ft_isdigit(int c)
     else
         return (0);
 }
-
-int main(int argc, const char * argv[]) {
-
-    int c = '8';
-    printf("%d\n", isdigit(c));
-    printf("%d\n", ft_isdigit(c));
-    return 0;
-}

@@ -17,11 +17,3 @@ void *ft_memalloc(size_t size)
     ft_bzero(str, size);
     return (str);
 }
-
-int main(int argc, const char * argv[]) {
-    
-    char *str = ft_memalloc(7);
-    printf("%s\n", str);
-
-    return 0;
-}

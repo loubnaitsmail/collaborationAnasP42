@@ -15,12 +15,3 @@ int ft_toupper(int c)
     else
         return (c);
 }
-
-int main(int argc, const char * argv[]) {
-
-    int c = 'j';
-    printf("%c\n", toupper(c));
-    printf("%c\n", ft_toupper(c));
-
-    return 0;
-}

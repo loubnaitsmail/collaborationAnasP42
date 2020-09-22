@@ -16,10 +16,3 @@ void ft_strclr(char *s)
         s++;
     }
 }
-
-int main(int argc, const char * argv[]) {
-    char str[6] = "hello";
-    ft_strclr(str);
-    printf("%s\n", str);
-    return 0;
-}

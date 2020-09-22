@@ -14,10 +14,3 @@ int ft_strnequ(char const *s1, char const *s2, size_t n)
         return (1);
     return (0);
 }
-
-int main(int argc, const char * argv[]) {
-    char *s1 = "hello";
-    char *s2 = "hello";
-    printf("%d\n", ft_strnequ(s1, s2, 4));
-    return 0;
-}

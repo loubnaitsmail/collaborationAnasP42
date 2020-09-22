@@ -15,12 +15,3 @@ int ft_tolower(int c)
     else
         return (c);
 }
-
-int main(int argc, const char * argv[]) {
-
-    int c = 'L';
-    printf("%c\n", tolower(c));
-    printf("%c\n", ft_tolower(c));
-
-    return 0;
-}

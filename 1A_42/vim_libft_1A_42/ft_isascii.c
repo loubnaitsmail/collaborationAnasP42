@@ -15,12 +15,3 @@ int ft_isascii(int c)
     else
         return (0);
 }
-
-int main(int argc, const char * argv[]) {
-
-    int c = '#';
-    printf("%d\n", isascii(c));
-    printf("%d\n", ft_isascii(c));
-
-    return 0;
-}

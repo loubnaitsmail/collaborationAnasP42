@@ -21,8 +21,3 @@ void ft_striteri(char *s, void(*f)(unsigned int, char *))
         i++;
     }
 }
-
-int main(int argc, const char * argv[]) {
-    
-    return 0;
-}

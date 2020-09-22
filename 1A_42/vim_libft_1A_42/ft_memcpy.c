@@ -20,17 +20,3 @@ void *ft_memcpy(void *restrict dest, const void *restrict src, size_t size)
     }
     return (dest);
 }
-
-int main(int argc, const char * argv[]) {
-    
-    char *src = "hello";
-    char *dest = NULL;
-    int length = sizeof(char) * 5;
-    dest = (char *) malloc( length + 1 );
-    ft_memcpy(dest, src, length); //sizeof(src)
-    printf( "%s", dest);
-    printf( "\n" );
-        
-    free(dest);
-    return 0;
-}

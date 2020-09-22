@@ -91,16 +91,3 @@ char **ft_strsplit(char const *s, char c)
     final_str[words] = 0;
     return (final_str);
 }
-                         
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    char *str = "*salut*les***etudiants*";
-    char c = '*';
-    char **final = ft_strsplit(str, c);
-    int i = 0;
-    while (final[i]) {
-        printf("%s\n", final[i]);
-        i++;
-    }
-    return 0;
-}
