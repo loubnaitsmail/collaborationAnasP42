@@ -1,8 +1,13 @@
 //
 //  main.c
-//  
+//  get_next_line_test
 //
-//  Created by ITSMAIL on 24/09/2020.
+//  Created by ITSMAIL on 22/09/2020.
+//  Copyright © 2020 ITSMAIL. All rights reserved.
 //
+#include "libft.h"
 
-#include <stdio.h>
+int            main()
+{
+    printf("hello");
+}

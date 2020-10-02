@@ -79,14 +79,16 @@ int                get_next_line(const int fd, char **line)
 
 int            main(int ac, char **av)
 {
+    printf("hello!");
     int        fd;
     char    *line;
 
     line = NULL;
-    fd = open("test.txt", O_RDONLY);
+    fd = open(av[ac-1], O_RDONLY);
     while (get_next_line(fd, &line))
     {
         ft_putendl(line);
     }
     close(fd);
+    
 }
