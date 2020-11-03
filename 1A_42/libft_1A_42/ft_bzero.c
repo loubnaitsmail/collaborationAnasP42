@@ -12,9 +12,7 @@ void ft_bzero(void *str, size_t size)
     copy = str;
     while (i < size)
     {
-        copy[i] = '0'; //ou \0 ?
+        copy[i] = '0';
         i++;
     }
- //ft_memset(str, '0', size);
 }
-

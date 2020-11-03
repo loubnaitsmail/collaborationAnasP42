@@ -6,7 +6,6 @@
 //
 
 #include "libft.h"
-//à mieux comprendre, ft_strlen replace
 
 size_t ft_strlcat(char *restrict dest, const char *restrict src, size_t destsize)
 {
