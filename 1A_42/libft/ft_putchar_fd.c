@@ -6,7 +6,7 @@
 /*   By: litsmail <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 19:35:48 by litsmail          #+#    #+#             */
-/*   Updated: 2020/12/01 19:36:15 by litsmail         ###   ########.fr       */
+/*   Updated: 2020/12/01 20:19:48 by litsmail         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 void	ft_putchar_fd(char c, int fd)
 {
 	if (fd < 0)
-		return;
+		return ;
 	write(fd, &c, 1);
 }

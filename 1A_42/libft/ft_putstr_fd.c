@@ -6,7 +6,7 @@
 /*   By: litsmail <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 19:37:51 by litsmail          #+#    #+#             */
-/*   Updated: 2020/12/01 19:38:32 by litsmail         ###   ########.fr       */
+/*   Updated: 2020/12/01 20:21:26 by litsmail         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_putstr_fd(char *s, int fd)
 
 	i = 0;
 	if (fd < 0 || !s)
-		return;
+		return ;
 	while (s[i])
 	{
 		ft_putchar_fd(s[i], fd);

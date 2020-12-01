@@ -6,7 +6,7 @@
 /*   By: litsmail <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 19:36:29 by litsmail          #+#    #+#             */
-/*   Updated: 2020/12/01 19:36:55 by litsmail         ###   ########.fr       */
+/*   Updated: 2020/12/01 20:20:46 by litsmail         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_putendl_fd(char *s, int fd)
 {
 	if (!s || !fd)
-		return;
+		return ;
 	write(fd, &*s, ft_strlen(s));
 	write(fd, "\n", 1);
 }

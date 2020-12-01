@@ -6,7 +6,7 @@
 /*   By: litsmail <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 19:43:17 by litsmail          #+#    #+#             */
-/*   Updated: 2020/12/01 19:44:16 by litsmail         ###   ########.fr       */
+/*   Updated: 2020/12/01 20:26:07 by litsmail         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ size_t	ft_strlcat(char *restrict dest, const char *restrict src, size_t size)
 	y = 0;
 	if (i < size)
 	{
-		while (src[y] && i < size - 1) //pk -1
+		while (src[y] && i < size - 1)
 		{
 			dest[i] = src[y];
 			i++;

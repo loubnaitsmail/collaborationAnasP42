@@ -6,7 +6,7 @@
 /*   By: litsmail <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 18:21:05 by litsmail          #+#    #+#             */
-/*   Updated: 2020/12/01 19:21:34 by litsmail         ###   ########.fr       */
+/*   Updated: 2020/12/01 20:01:09 by litsmail         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_atoi(const char *str)
 {
-	int	negatif;
+	int		negatif;
 	long	convert;
 
 	negatif = 1;

@@ -6,23 +6,23 @@
 /*   By: litsmail <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 19:38:47 by litsmail          #+#    #+#             */
-/*   Updated: 2020/12/01 19:40:35 by litsmail         ###   ########.fr       */
+/*   Updated: 2020/12/01 20:42:22 by litsmail         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	is_char(char current, char c)
+int		is_char(char current, char c)
 {
 	if (current == c)
 		return (1);
 	return (0);
 }
 
-int	count_words(char *str, char c)
+int		count_words(char *str, char c)
 {
-	int	words;
-	int	i;
+	int		words;
+	int		i;
 
 	i = 0;
 	words = 0;
@@ -36,7 +36,6 @@ int	count_words(char *str, char c)
 			while (str[i] && !is_char(str[i], c))
 				i++;
 		}
-
 	}
 	return (words);
 }
@@ -47,7 +46,7 @@ char	*duplicate(char *str, char nbr_caracters)
 	char	*dest;
 
 	i = 0;
-	if (!(dest = (char *) malloc(sizeof(char) * (nbr_caracters + 1))))
+	if (!(dest = (char *)malloc(sizeof(char) * (nbr_caracters + 1))))
 		return (NULL);
 	while (str[i] && i < nbr_caracters)
 	{
@@ -60,9 +59,9 @@ char	*duplicate(char *str, char nbr_caracters)
 
 char	**fill_tab(char **final_str, char *str, char c, int size)
 {
-	int	caracters;
-	int	count;
-	int	i;
+	int		caracters;
+	int		count;
+	int		i;
 
 	i = 0;
 	count = 0;
@@ -88,7 +87,7 @@ char	**ft_split(char const *s, char c)
 	char	**final_str;
 
 	words = count_words((char *)s, c);
-	if (!(final_str = (char **) malloc(sizeof(char *) * (words + 1))))
+	if (!(final_str = (char **)malloc(sizeof(char *) * (words + 1))))
 		return (NULL);
 	final_str = fill_tab(final_str, (char *)s, c, words);
 	final_str[words] = 0;

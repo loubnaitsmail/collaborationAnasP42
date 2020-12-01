@@ -6,7 +6,7 @@
 /*   By: litsmail <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 19:30:11 by litsmail          #+#    #+#             */
-/*   Updated: 2020/12/01 19:30:56 by litsmail         ###   ########.fr       */
+/*   Updated: 2020/12/01 20:17:02 by litsmail         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t		i;
+	size_t			i;
 	unsigned char	*s1_copy;
 	unsigned char	*s2_copy;
 
@@ -27,5 +27,5 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 			return (s1_copy[i] - s2_copy[i]);
 		i++;
 	}
-	return(0);
+	return (0);
 }

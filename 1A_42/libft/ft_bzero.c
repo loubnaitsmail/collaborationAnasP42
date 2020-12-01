@@ -6,7 +6,7 @@
 /*   By: litsmail <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 18:23:48 by litsmail          #+#    #+#             */
-/*   Updated: 2020/12/01 19:22:00 by litsmail         ###   ########.fr       */
+/*   Updated: 2020/12/01 20:13:24 by litsmail         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	ft_bzero(void *str, size_t size)
 {
-	size_t		i;
+	size_t			i;
 	unsigned char	*copy;
 
 	if (size == 0)
-		return;
+		return ;
 	ft_memset(str, 0, size);
 }
