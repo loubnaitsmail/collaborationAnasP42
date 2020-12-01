@@ -16,5 +16,5 @@ char *ft_strtrim(char const *s) // corriger
         return (ft_strdup(s + start));
     while ((s[last] == ' ' || s[last] == '\n' || s[last] == '\t') && last > 0)
         last--;
-    return (ft_strsub(s, start, last - start + 1));
+    return (ft_substr(s, start, last - start + 1));
 }

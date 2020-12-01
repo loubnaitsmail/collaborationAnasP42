@@ -6,7 +6,7 @@
 #    By: litsmail <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/01 17:59:12 by litsmail          #+#    #+#              #
-#    Updated: 2020/12/01 18:01:45 by litsmail         ###   ########.fr        #
+#    Updated: 2020/12/01 18:05:14 by litsmail         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,19 +30,19 @@ RM = rm -f
 CFLAGS = 
 
 .c.o:
-${CC} ${CFLAGS} -c -I${INCLUDES} $< -o ${<:.c=.o}
+		${CC} ${CFLAGS} -c -I${INCLUDES} $< -o ${<:.c=.o}
 
 ${NAME}:	${OBJS}
-ar rc ${NAME} ${OBJS}
+		ar rc ${NAME} ${OBJS}
 
 
 all:		${NAME}
 
 clean:
-${RM} ${OBJS}
+		${RM} ${OBJS}
 
 fclean:		clean
-${RM} ${NAME}
+		${RM} ${NAME}
 
 re:		fclean all
 
