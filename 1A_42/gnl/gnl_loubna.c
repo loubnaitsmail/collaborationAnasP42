@@ -67,7 +67,7 @@ void read_funct(char *buf, char **save_buf, long int read_return)
     strcat(*save_buf, buf);
 }
 
-int respectNormSoSplitFunctionBecauseZZZ(char **save_buf, int index,char ***line)
+int rest_to_print(char **save_buf, int index,char ***line)
 {
     if (*save_buf != NULL)
     {
@@ -101,12 +101,11 @@ int get_next_line(const int fd, char **line)
     while ((read_return = read(fd, buf, BUFF_SIZE)) > 0)
     {
         read_funct(buf, &save_buf, read_return);
-        
         index = get_contains_index(save_buf, '\n');
         if (index != -1) //si save_buf contient \n
             return (separate(line, save_buf, index, 0));
     }
-    return (respectNormSoSplitFunctionBecauseZZZ(&save_buf, index, &line));
+    return (rest_to_print(&save_buf, index, &line));
 }
 
 int main(int argc, const char * argv[]) {
