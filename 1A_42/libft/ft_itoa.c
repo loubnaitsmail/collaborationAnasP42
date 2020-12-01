@@ -1,14 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: litsmail <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/12/01 19:27:09 by litsmail          #+#    #+#             */
+/*   Updated: 2020/12/01 19:28:06 by litsmail         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-    char *result;
-    int size;
-    int tmp;
-    long nbr;
-    int i;
-    char *base;
+    char	*result;
+    int		size;
+    int		tmp;
+    long	nbr;
+    int		i;
+    char	*base;
     
     nbr = n;
     tmp = 10;
@@ -27,7 +38,6 @@ char *ft_itoa(int n)
     if (!(result = (char *)malloc(sizeof(char) * (size + 1))))
         return (NULL);
     result[size] = '\0';
-
     i = size - 1;
     while (i > 0)
     {
